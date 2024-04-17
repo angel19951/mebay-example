@@ -1,0 +1,95 @@
+.meBayContainer {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr;
+    grid-template-areas:
+        "thumbnailsArea mainProductArea informationArea";
+}
+
+.thumbnailsArea {
+    grid-area: thumbnailsArea;
+}
+
+.mainProductArea {
+    grid-area: mainProductArea;
+    justify-self: center;
+    align-content: center;
+}
+
+.informationArea {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "productNameArea"
+        "productPriceArea"
+        "productConditionArea"
+        "salesEndArea"
+        "quantityArea"
+        "actionButtonsArea";
+    grid-area: informationArea;
+}
+
+.productNameArea {
+    grid-area: productNameArea;
+}
+
+.productPriceArea {
+    grid-area: productPriceArea;
+}
+
+.productConditionArea {
+    grid-area: productConditionArea;
+}
+
+.salesEndArea {
+    grid-area: salesEndArea;
+}
+
+.quantityArea {
+    grid-area: quantityArea;
+}
+
+.actionButtonsArea {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "buitNowButtonArea"
+        "addToCartButtonArea"
+        "addToWatchListButtonArea";
+    grid-area: actionButtonsArea;
+}
+
+.buitNowButtonArea {
+    grid-area: buitNowButtonArea;
+}
+
+.addToCartButtonArea {
+    grid-area: addToCartButtonArea;
+}
+
+.addToWatchListButtonArea {
+    grid-area: addToWatchListButtonArea;
+}
+
+.thumbnailStyles {
+    border-radius: 25px;
+    height: 155px;
+    width: 150px;
+}
+
+.borderStyles {
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+.mainProductStyles {
+    height: 275px;
+    width: 275px;
+    border-width: 1px;
+    border-color: black;
+}
